@@ -142,8 +142,10 @@ void startCount()
     //When we hit 10 it rolls the next number up.
     
     //we will have to guess what we want the timing to be
-    //This is going to go fast if it is a ture timer
-    if(watch.hasPassed(300))
+    //This is going to go fast if it is a true timer
+    //update the watchTick value in the defines header
+
+    if(watch.hasPassed(watchTick))
     {
       first++;
 

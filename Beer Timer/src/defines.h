@@ -89,6 +89,22 @@ const uint8_t win2 = 0;
 const uint8_t win3 = 1;
 const uint8_t win4 = 4;
 
+/*
+This is the value that cause the timer 
+to roll over to the next integer.
+
+It is all in millis. ie 1000ms = 1 sec
+to be a correct "timer" it would be set to 100
+
+300 on my two displays felt right but it might be differnt
+with the real setup. This will make it easy for you to test
+*/
+
+const uint16_t watchTick = 300;
+
+
+
+/**********************************************************/
 
 //You shouldn't need to edit any of this
 //It handles breaking up the segments of the singular strip
